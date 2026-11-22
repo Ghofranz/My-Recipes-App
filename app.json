@@ -1,17 +1,24 @@
 {
   "expo": {
-    "name": "recipe-app",
-    "slug": "recipe-app",
+    "name": "Qu'est-ce qu'on mange ?",
+    "slug": "quoi-manger",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDF8F3"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.quoimanger.app"
     },
     "android": {
+      "package": "com.quoimanger.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#D4541A",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -20,6 +27,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "99a3029b-78bb-4b90-926e-a07b5333ffa7"
+      }
     }
   }
 }
